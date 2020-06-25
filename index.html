@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recruitment</title>
+		<link rel = "stylesheet" type = "text/css" href = "css.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+	   
+		<div class = "title">
+			<h1>hello</h1>
+			<h2>complete this form please</h2>
+        </div>
+        
+		<div>
+			<form class="form" method="post" action="php.php">
+				
+				
+					<input name="name" type="text" class="form-control" placeholder="Your Name and Surename" required>
+					<input name="email" type="email" class="form-control" placeholder="Your Email Address" required>
+					<input name="phone_number" type="phone_number" class="form-control" placeholder="Your UK Phone Number" required>
+					<input name="post_code" type="post_code" class="form-control" placeholder="Postcode where do you live" >
+			
+		<hr>
+				<div class="square">
+					<p>Which position(s) are you interested in ?</p>
+					<select name="position" class="list">
+						<option value="" disabled selected hidden>Choose position</option>
+						<option value="Labourer">Labourer</option>
+						<option value="Cleaner">Cleaner</option>
+						<option value="Skilled Labourer">Skilled Labourer</option>
+						<option value="Crane Operator">Crane Operator</option>
+						<option value="Rolled Driver">Rolled Driver</option>
+					</select>
+				</div>	
+
+		<hr>
+				<div class="square">
+					<p>What tickets (cards) do you have ?</p>
+					<select name="tickets" class="list">
+						<option value="" disabled selected hidden>Choose ticket</option>
+						<option value="CSCS Green">CSCS Green</option>
+						<option value="CSCS Blue">CSCS Blue</option>
+						<option value="CSCS Gold">CSCS Gold</option>
+						<option value="CSCS Black">CSCS Black</option>
+						<option value="CPCS Blue">CPCS Blue</option>
+						<option value="NPORS">NPORS</option>
+						<option value="JIB">JIB</option>
+						<option value="None">None</option>
+					</select> 	
+				</div>
+		<hr>				
+<!--
+				<p>Which position(s) are you interested in ?</p>
+				<label class="checkbox" >
+					Labourer <br> <input  type = "checkbox" name="check_list[]" value="Labourer" /> <br/> <br>
+					Cleaner <br> <input  type = "checkbox" name="check_list[]" value="Cleaner" /> <br/> <br>
+					Skilled Labourer <br> <input  type = "checkbox" name="check_list[]" value="Skilled Labourer" />  <br/> <br>
+					Crane Operator <br> <input  type = "checkbox" name="check_list[]" value="Crane Operator" />  <br/> <br>
+					Rolled Driver <br> <input  type = "checkbox" name="check_list[]" value="Rolled Driver" />  <br/> <br>
+				</label>
+
+				<p>What tickets (cards) do you have ?</p>
+				<label class="checkbox">
+					CSCS Green <br> <input type = "checkbox" name="check_list2[]" value="CSCS Green" /> <br /><br>
+					CSCS Blue <br> <input type = "checkbox" name="check_list2[]" value="CSCS Blue" /> <br /> <br>
+					CSCS Gold <br> <input type = "checkbox" name="check_list2[]" value="CSCS Gold" /> <br /> <br>
+					CSCS Black <br> <input type = "checkbox" name="check_list2[]" value="CSCS Black" /> <br /> <br>
+					CPCS Red <br> <input type = "checkbox" name="check_list2[]" value="CPCS Red" /> <br /> <br>
+					CPCS Blue <br> <input type = "checkbox" name="check_list2[]" value="CPCS Blue" /> <br /> <br>
+					NPORS <br> <input type = "checkbox" name="check_list2[]" value="NPORS" /> <br /><br>
+					JIB <br> <input type = "checkbox" name="check_list2[]" value="JIB" /> <br /><br>
+				</label>
+-->				
+				<div class="square">
+					<p>Do you have NINO ?</p>
+					<label class="radio">
+						<input type="radio" name="nino" value="Yes">
+						<label for="YES">YES</label>
+						<input type="radio" name="nino" value="No">
+						<label for="NO">NO</label>
+					</label>
+				</div>
+
+		<hr>
+				<div class="square">
+					<p>Do you have UTR ?</p>
+					<label class="radio">
+						<input type="radio" name="utr" value="Yes">
+						<label for="YES">YES</label>
+						<input type="radio" name="utr" value="No">
+						<label for="NO">NO</label>
+					</label>
+				</div>
+		<hr>
+				<div class="square">
+					<p>What do you use for travel to work ?</p>
+					<select name="travel" class="list">
+						<option value="" disabled selected hidden>Choose transport</option>
+						<option value="Car">Car</option>
+						<option value="Metro">Train</option>
+						<option value="Bus">Bus</option>
+						<option value="Bike">Bike</option>
+						<option value="Bicycle">Bicycle</option>
+					</select> 
+				</div>
+		<hr>
+				<div class="square">
+					<textarea name = "message" type="text" class="form-control" placeholder="Text Message"></textarea>
+				</div>
+		<hr>
+				<input id="button" type="submit" class="form-control submit" value="SUBMIT">
+	
+			</form>
+        </div>  
+	</body>
+</html>
